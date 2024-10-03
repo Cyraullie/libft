@@ -6,13 +6,13 @@
 #    By: cgoldens <cgoldens@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/01 11:31:20 by cgoldens          #+#    #+#              #
-#    Updated: 2024/10/03 13:20:05 by cgoldens         ###   ########.fr        #
+#    Updated: 2024/10/03 15:32:25 by cgoldens         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
-
+#TODO faire les bonus vu que j'ai le temps
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror -I
-INCLUDES	=	include/
+INCLUDES	=	./
 SRC_DIR 	=	src/*/
 SRC = $(wildcard $(SRC_DIR)/ft_*.c)
 OBJ = $(SRC:.c=.o)
@@ -21,7 +21,7 @@ NAME = libft.a
 all: $(NAME)
 
 %.o: %.c
-	$(CC) $(CFLAGS) $(INCLUDES) -c -o $@ $<
+	$(CC) $(CFLAGS) $(INCLUDES) -c $< -o $@
 
 $(NAME): $(OBJ)
 	ar rc $(NAME) $(OBJ)
