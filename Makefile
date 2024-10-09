@@ -6,10 +6,11 @@
 #    By: cgoldens <cgoldens@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/01 11:31:20 by cgoldens          #+#    #+#              #
-#    Updated: 2024/10/09 16:44:18 by cgoldens         ###   ########.fr        #
+#    Updated: 2024/10/09 16:50:34 by cgoldens         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 #TODO faire avec les fichier a la racine et enlever le _bonus au bonus
+#TODO mettre une variable tmp dans lstmap
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror -I
 INCLUDES	=	./
