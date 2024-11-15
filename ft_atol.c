@@ -6,7 +6,7 @@
 /*   By: cgoldens <cgoldens@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 10:57:14 by cgoldens          #+#    #+#             */
-/*   Updated: 2024/11/15 16:09:13 by cgoldens         ###   ########.fr       */
+/*   Updated: 2024/11/15 16:17:19 by cgoldens         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ long int	ft_atol(const char *str)
 	}
 	else if (str[i] == '+')
 		i++;
-	while (isdigit(str[i]))
+	while (ft_isdigit(str[i]))
 	{
 		result *= 10;
 		result += str[i] - '0';
