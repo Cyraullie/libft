@@ -6,36 +6,11 @@
 /*   By: cgoldens <cgoldens@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 14:18:22 by cgoldens          #+#    #+#             */
-/*   Updated: 2024/11/11 14:01:57 by cgoldens         ###   ########.fr       */
+/*   Updated: 2025/01/26 15:08:11 by cgoldens         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-char	*ft_strjoin(char const *s1, char const *s2)
-{
-	int		sizetotal;
-	char	*res;
-	int		i;
-	int		j;
-
-	if (!s1)
-		s1 = "";
-	if (!s2)
-		s2 = "";
-	sizetotal = ft_strlen(s1) + ft_strlen(s2);
-	res = malloc(sizeof(char) * (sizetotal + 1));
-	if (!res)
-		return (NULL);
-	i = -1;
-	while (s1[++i] != 0)
-		res[i] = s1[i];
-	j = 0;
-	while (s2[j] != 0)
-		res[i++] = s2[j++];
-	res[sizetotal] = 0;
-	return (res);
-}
 
 char	*ft_strchr(const char *string, int searchedChar )
 {
