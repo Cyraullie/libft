@@ -6,7 +6,7 @@
 /*   By: cgoldens <cgoldens@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 15:03:51 by cgoldens          #+#    #+#             */
-/*   Updated: 2025/05/16 16:42:41 by cgoldens         ###   ########.fr       */
+/*   Updated: 2025/05/16 16:46:28 by cgoldens         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@
 # include <sys/uio.h>
 
 # ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 100000000
+#  define BUFFER_SIZE 42
 # endif
 
 typedef struct s_list
